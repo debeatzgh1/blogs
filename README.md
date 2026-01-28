@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -98,14 +98,16 @@ iframe{
 <div class="modal-bg" id="modal">
   <div class="modal-box" id="modalBox">
 
+    <!-- Desktop Tabs -->
     <div class="tabs">
       <div class="tab active" data-tab="wordpress" onclick="switchTab('wordpress')">Web</div>
-      <div class="tab" data-tab="blogger" onclick="switchTab('blogger')">Home</div>
-      <div class="tab" data-tab="slides" onclick="switchTab('slides')">Offers</div>
+      <div class="tab" data-tab="blogger" onclick="switchTab('blogger')">Blog</div>
+      <div class="tab" data-tab="offers" onclick="switchTab('offers')">Offers</div>
       <div class="tab" data-tab="sign" onclick="switchTab('sign')">Sign</div>
-      <div class="tab" data-tab="about" onclick="switchTab('about')">Suggest</div>
+      <div class="tab" data-tab="suggest" onclick="switchTab('suggest')">Suggest</div>
     </div>
 
+    <!-- Controls -->
     <div class="controls">
       <div class="ctrl-btn" onclick="goBack()">⟵</div>
       <div class="ctrl-btn" onclick="goForward()">⟶</div>
@@ -115,12 +117,13 @@ iframe{
 
     <iframe id="frame"></iframe>
 
+    <!-- Mobile Tabs (Icons open Blogspot too) -->
     <div class="mobile-tabs">
-      <div class="mobile-tab active" data-tab="wordpress" onclick="switchTab('wordpress')">Web</div>
-      <div class="mobile-tab" data-tab="blogger" onclick="switchTab('blogger')">Tools</div>
-      <div class="mobile-tab" data-tab="slides" onclick="switchTab('slides')">Offers</div>
-      <div class="mobile-tab" data-tab="sign" onclick="switchTab('sign')">Sign</div>
-      <div class="mobile-tab" data-tab="about" onclick="switchTab('about')">Suggest</div>
+      <div class="mobile-tab active" data-tab="wordpress" onclick="switchTab('wordpress')">🌐</div>
+      <div class="mobile-tab" data-tab="blogger" onclick="switchTab('blogger')">📝</div>
+      <div class="mobile-tab" data-tab="offers" onclick="switchTab('offers')">🎁</div>
+      <div class="mobile-tab" data-tab="sign" onclick="switchTab('sign')">✅</div>
+      <div class="mobile-tab" data-tab="suggest" onclick="switchTab('suggest')">💡</div>
     </div>
 
   </div>
@@ -132,13 +135,13 @@ const frame = document.getElementById("frame");
 const tabs = document.querySelectorAll(".tab");
 const mobileTabs = document.querySelectorAll(".mobile-tab");
 
-/* ✅ URL MAP (FIXED KEYS – SAME URLs) */
+/* ✅ CLEAN & VALID URL MAP */
 const URLS = {
-  🌐: "https://msha.ke/debeatzgh/",
-  : "",
-  🌐: "https://debeatzgh1.blogspot.com/",
-  ✅: "https://debeatzgh1.blogspot.com/",
-  📄: "https://beatzde4.blogspot.com/"
+  wordpress: "https://debeatzgh.wordpress.com/",
+  blogger: "https://debeatzgh1.blogspot.com/",
+  offers: "https://msha.ke/debeatzgh/",
+  sign: "https://debeatzgh1.blogspot.com/",
+  suggest: "https://beatzde4.blogspot.com/"
 };
 
 let historyStack = [];
@@ -169,28 +172,31 @@ function closeLauncher(){
 function switchTab(tab){
   tabs.forEach(t=>t.classList.remove("active"));
   mobileTabs.forEach(t=>t.classList.remove("active"));
-  document.querySelectorAll(`[data-tab="${tab}"]`).forEach(t=>t.classList.add("active"));
+  document.querySelectorAll(`[data-tab="${tab}"]`)
+    .forEach(t=>t.classList.add("active"));
   load(URLS[tab]);
 }
 
 function goBack(){
-  if(historyIndex>0){
+  if(historyIndex > 0){
     historyIndex--;
     frame.src = historyStack[historyIndex];
   }
 }
+
 function goForward(){
-  if(historyIndex<historyStack.length-1){
+  if(historyIndex < historyStack.length - 1){
     historyIndex++;
     frame.src = historyStack[historyIndex];
   }
 }
 
 function toggleFS(){
-  const el=document.getElementById("modalBox");
+  const el = document.getElementById("modalBox");
   if(!document.fullscreenElement) el.requestFullscreen();
   else document.exitFullscreen();
 }
 </script>
 
-
+</body>
+</html>
