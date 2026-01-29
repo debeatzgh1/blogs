@@ -140,7 +140,7 @@ const URLS = {
   wordpress: "https://debeatzgh.wordpress.com/",
   blogger: "https://debeatzgh1.blogspot.com/",
   offers: "https://msha.ke/debeatzgh/",
-  sign: "https://debeatzgh1.blogspot.com/",
+  sign: "https://digimartgh.blogspot.com/",
   suggest: "https://beatzde4.blogspot.com/"
 };
 
