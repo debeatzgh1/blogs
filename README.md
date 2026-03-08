@@ -1,3 +1,129 @@
+<div id="firebase-mini-banner" class="firebase-node-mini">
+    <div class="mini-content">
+        <div class="status-indicator">
+            <span class="pulse-dot"></span>
+        </div>
+        <div class="mini-text">
+            <span class="label">Internal Build</span>
+            <span class="version">v2.4-stable</span>
+        </div>
+    </div>
+    <button onclick="openFirebaseNode()" class="mini-action-btn">
+        <i class="fas fa-download"></i>
+    </button>
+</div>
+
+<style>
+    .firebase-node-mini {
+        position: fixed;
+        top: 25px;
+        left: 25px; /* Positioned left to avoid clashing with the 'Suggest' button */
+        width: 120px;
+        height: 42px;
+        background: rgba(10, 10, 12, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 242, 255, 0.2);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6px 0 12px;
+        z-index: 9999;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+    }
+
+    .firebase-node-mini:hover {
+        border-color: #00f2ff;
+        transform: translateY(-3px);
+    }
+
+    .mini-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .status-indicator {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .pulse-dot {
+        width: 6px;
+        height: 6px;
+        background: #00f2ff;
+        border-radius: 50%;
+        box-shadow: 0 0 8px #00f2ff;
+        animation: miniPulse 2s infinite;
+    }
+
+    @keyframes miniPulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.5); opacity: 0.5; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    .mini-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mini-text .label {
+        font-size: 8px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #475569;
+        letter-spacing: 1px;
+    }
+
+    .mini-text .version {
+        font-size: 10px;
+        font-family: monospace;
+        color: #f1f5f9;
+        font-weight: bold;
+    }
+
+    .mini-action-btn {
+        background: #00f2ff;
+        color: #000;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .mini-action-btn:hover {
+        background: #fff;
+        transform: scale(1.1);
+    }
+
+    /* Integration with your Master Overlay System */
+</style>
+
+<script>
+    function openFirebaseNode() {
+        // Using the same openLink/openFrame logic we built for your Hub
+        if (typeof openLink === "function") {
+            openLink('https://debeatzgh1.github.io/Home-/');
+        } else if (typeof openFrame === "function") {
+            openFrame('https://debeatzgh1.github.io/Home-/');
+        } else {
+            // Fallback for standalone use
+            window.open('https://debeatzgh1.github.io/Home-/', '_blank');
+        }
+    }
+</script>
+
+
 <html lang="en">
 <head>
     <style>
