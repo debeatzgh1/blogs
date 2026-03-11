@@ -1,159 +1,72 @@
-<h1 class="hub-title">Welcome to the Debeatzgh Digital Hub</h1>
-<p class="hub-subtitle">
-    A centralized platform for AI tools, productivity resources, and professional digital solutions — 
-    engineered by <strong>DeBeatzGH</strong> for creators and entrepreneurs.
-</p>
+<h1>Welcome to the Debeatzgh Digital Hub</h1>
+A centralized platform for AI tools, productivity resources, smart earning ideas,
+quizzes, and professional digital solutions — designed for creators, students,
+entrepreneurs, and modern hustlers.
+
 
 <div class="grid">
-    <div class="card">
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Digital Interface">
-        </div>
-        <div class="card-body">
-            <h3>Digital Hub Menu</h3>
-            <p>Access custom chatbot integrations, responsive UI components, and the Collaborators Hub from one interface.</p>
-            <div class="card-actions">
-                <button onclick="openIframe('https://debeatzgh1.github.io/me-/')" class="btn btn-primary">Open Hub</button>
-                <a href="https://debeatzgh1.github.io/me-/" target="_blank" class="btn btn-outline">New Tab</a>
-            </div>
-        </div>
-    </div>
 
-    <div class="card">
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="AI Logic">
-        </div>
-        <div class="card-body">
-            <h3>AI Prompt Advantage</h3>
-            <p>Master the "3D Chibi Anime Prompt Generator" and high-level prompt engineering workflows for passive income.</p>
-            <div class="card-actions">
-                <button onclick="openIframe('https://beatzde4.blogspot.com')" class="btn btn-primary">Get Advantage</button>
-                <a href="https://beatzde4.blogspot.com" target="_blank" class="btn btn-outline">Open Blog</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80" alt="E-commerce">
-        </div>
-        <div class="card-body">
-            <h3>Debeatzgh Sales Platform</h3>
-            <p>Explore premium AI-powered creativity tools, digital products, and modern web development assets.</p>
-            <div class="card-actions">
-                <button onclick="openIframe('https://debeatzgh1.github.io/sales')" class="btn btn-primary">Explore</button>
-                <a href="https://debeatzgh1.github.io/sales" target="_blank" class="btn btn-outline">New Tab</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=800&q=80" alt="Income Growth">
-        </div>
-        <div class="card-body">
-            <h3>Side Hustle Starter Kit</h3>
-            <p>Deploy "From Passion to Profit" blueprints using modern frameworks like Tailwind CSS and automated workflows.</p>
-            <div class="card-actions">
-                <button onclick="openIframe('https://debeatzgh1.github.io/Side-hustle-starter-kit-/')" class="btn btn-primary">View Kit</button>
-                <a href="https://debeatzgh1.github.io/Side-hustle-starter-kit-/" target="_blank" class="btn btn-outline">New Tab</a>
-            </div>
-        </div>
-    </div>
+    <!-- Digital Hub Menu -->
+<div class="card">
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="">
+<div class="card-body">
+<h3>Digital Hub Menu</h3>
+Launch AI tools, productivity apps, updates, collaboration features, and entertainment resources from one interface.
+<div class="card-actions">
+          <a href="#" class="btn btn-primary">Open Hub</a>
+<a href="https://debeatzgh1.github.io/me-/" target="_blank" class="btn btn-outline">Open New Tab</a></div>
+</div>
+</div>
+<!-- Business Quiz -->
+<div class="card">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="">
+<div class="card-body">
+<h3>Online Business Quiz</h3>
+Test your business readiness, evaluate your knowledge, and get instant feedback through an interactive quiz.
+<div class="card-actions">
+          <a href="#" class="btn btn-primary">Take Quiz</a>
+<a href="https://debeatzgh1.blogspot.com/2025/12/online-business-quiz-widget.html" target="_blank" class="btn btn-outline">Open Page</a></div>
+</div>
+</div>
+<!-- Sales Platform -->
+<div class="card">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
+<div class="card-body">
+<h3>Debeatzgh Sales Platform</h3>
+Explore AI tools, digital products, smart earning ideas, blogging resources, and professional online solutions.
+<div class="card-actions">
+          <a href="#" class="btn btn-primary">Explore</a>
+<a href="https://debeatzgh1.github.io/sales" target="_blank" class="btn btn-outline">Open New Tab</a></div>
+</div>
+</div>
+<!-- Side Hustle Kit -->
+<div class="card">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="">
+<div class="card-body">
+<h3>Side Hustle Starter Kit</h3>
+Beginner-friendly side hustle paths, AI-powered workflows, and digital income blueprints.
+<div class="card-actions">
+          <a href="#" class="btn btn-primary">View Kit</a>
+<a href="https://debeatzgh1.github.io/Side-hustle-starter-kit-/" target="_blank" class="btn btn-outline">Open New Tab</a></div>
+</div>
+</div>
 </div>
 
-<div class="iframe-modal" id="iframeModal" style="display:none;">
-    <div class="iframe-box">
-        <div class="iframe-header">
-            <span id="modal-url-text">Secure Portal</span>
-            <button class="close-btn" onclick="closeIframe()">Close [X]</button>
-        </div>
-        <iframe src="" id="iframeView" frameborder="0"></iframe>
-    </div>
+<!-- IFRAME MODAL -->
+<div class="iframe-modal" id="iframeModal">
+<div class="iframe-box">
+<div class="close-btn">Close</div>
 </div>
-
-<style>
-    /* Image Resizing and Professional Layout */
-    .img-container {
-        width: 100%;
-        height: 180px; /* Fixed height for uniformity */
-        overflow: hidden;
-    }
-    .img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures images aren't stretched */
-        transition: transform 0.5s ease;
-    }
-    .card:hover .img-container img {
-        transform: scale(1.1);
-    }
-    
-    /* Modal Styling */
-    .iframe-modal {
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.9);
-        z-index: 99999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .iframe-box {
-        width: 95%;
-        height: 90%;
-        background: #fff;
-        border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .iframe-header {
-        background: #1a1a1a;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-        font-family: monospace;
-        font-size: 12px;
-    }
-    #iframeView {
-        flex-grow: 1;
-        width: 100%;
-    }
-    .close-btn {
-        background: #e11d48;
-        border: none;
-        color: #fff;
-        padding: 5px 15px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-    }
-</style>
-
-<script>
-    function openIframe(url) {
-        const modal = document.getElementById('iframeModal');
-        const frame = document.getElementById('iframeView');
-        const urlText = document.getElementById('modal-url-text');
-        
-        frame.src = url;
-        urlText.innerText = "Connecting to: " + url;
-        modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
-    }
-
-    function closeIframe() {
-        const modal = document.getElementById('iframeModal');
-        const frame = document.getElementById('iframeView');
-        
-        frame.src = '';
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Re-enable scrolling
-    }
-</script>
+</div>
+<br>
+function openIframe(url){<br>
+  document.getElementById('iframeView').src = url;<br>
+  document.getElementById('iframeModal').style.display = 'block';<br>
+}<br>
+function closeIframe(){<br>
+  document.getElementById('iframeView').src = '';<br>
+  document.getElementById('iframeModal').style.display = 'none';<br>
+}<br>
 
 
 
