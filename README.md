@@ -1,3 +1,163 @@
+<h1 class="hub-title">Welcome to the Debeatzgh Digital Hub</h1>
+<p class="hub-subtitle">
+    A centralized platform for AI tools, productivity resources, and professional digital solutions — 
+    engineered by <strong>DeBeatzGH</strong> for creators and entrepreneurs.
+</p>
+
+<div class="grid">
+    <div class="card">
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Digital Interface">
+        </div>
+        <div class="card-body">
+            <h3>Digital Hub Menu</h3>
+            <p>Access custom chatbot integrations, responsive UI components, and the Collaborators Hub from one interface.</p>
+            <div class="card-actions">
+                <button onclick="openIframe('https://debeatzgh1.github.io/me-/')" class="btn btn-primary">Open Hub</button>
+                <a href="https://debeatzgh1.github.io/me-/" target="_blank" class="btn btn-outline">New Tab</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="AI Logic">
+        </div>
+        <div class="card-body">
+            <h3>AI Prompt Advantage</h3>
+            <p>Master the "3D Chibi Anime Prompt Generator" and high-level prompt engineering workflows for passive income.</p>
+            <div class="card-actions">
+                <button onclick="openIframe('https://beatzde4.blogspot.com')" class="btn btn-primary">Get Advantage</button>
+                <a href="https://beatzde4.blogspot.com" target="_blank" class="btn btn-outline">Open Blog</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80" alt="E-commerce">
+        </div>
+        <div class="card-body">
+            <h3>Debeatzgh Sales Platform</h3>
+            <p>Explore premium AI-powered creativity tools, digital products, and modern web development assets.</p>
+            <div class="card-actions">
+                <button onclick="openIframe('https://debeatzgh1.github.io/sales')" class="btn btn-primary">Explore</button>
+                <a href="https://debeatzgh1.github.io/sales" target="_blank" class="btn btn-outline">New Tab</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=800&q=80" alt="Income Growth">
+        </div>
+        <div class="card-body">
+            <h3>Side Hustle Starter Kit</h3>
+            <p>Deploy "From Passion to Profit" blueprints using modern frameworks like Tailwind CSS and automated workflows.</p>
+            <div class="card-actions">
+                <button onclick="openIframe('https://debeatzgh1.github.io/Side-hustle-starter-kit-/')" class="btn btn-primary">View Kit</button>
+                <a href="https://debeatzgh1.github.io/Side-hustle-starter-kit-/" target="_blank" class="btn btn-outline">New Tab</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="iframe-modal" id="iframeModal" style="display:none;">
+    <div class="iframe-box">
+        <div class="iframe-header">
+            <span id="modal-url-text">Secure Portal</span>
+            <button class="close-btn" onclick="closeIframe()">Close [X]</button>
+        </div>
+        <iframe src="" id="iframeView" frameborder="0"></iframe>
+    </div>
+</div>
+
+<style>
+    /* Image Resizing and Professional Layout */
+    .img-container {
+        width: 100%;
+        height: 180px; /* Fixed height for uniformity */
+        overflow: hidden;
+    }
+    .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures images aren't stretched */
+        transition: transform 0.5s ease;
+    }
+    .card:hover .img-container img {
+        transform: scale(1.1);
+    }
+    
+    /* Modal Styling */
+    .iframe-modal {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.9);
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .iframe-box {
+        width: 95%;
+        height: 90%;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .iframe-header {
+        background: #1a1a1a;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-family: monospace;
+        font-size: 12px;
+    }
+    #iframeView {
+        flex-grow: 1;
+        width: 100%;
+    }
+    .close-btn {
+        background: #e11d48;
+        border: none;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    function openIframe(url) {
+        const modal = document.getElementById('iframeModal');
+        const frame = document.getElementById('iframeView');
+        const urlText = document.getElementById('modal-url-text');
+        
+        frame.src = url;
+        urlText.innerText = "Connecting to: " + url;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeIframe() {
+        const modal = document.getElementById('iframeModal');
+        const frame = document.getElementById('iframeView');
+        
+        frame.src = '';
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+</script>
+
+
+
+
 <div id="smart-float-container" class="float-wrapper">
     <div id="float-nudge" class="float-nudge">
         <p>Claim your <strong>.wordpress.com</strong> site!</p>
