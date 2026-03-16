@@ -59,7 +59,7 @@
     }
 
     .pulse-dot {
-        width: 6px;
+        width: 50px;
         height: 6px;
         background: #00f2ff;
         border-radius: 50%;
