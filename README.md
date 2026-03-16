@@ -293,13 +293,6 @@
 
 
 
-<!-- Elfsight RSS Feed | RSS Feed -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-df567ac9-59ad-42a0-9c79-0173a06788fa" data-elfsight-app-lazy></div>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Multi-Tab Launcher</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
