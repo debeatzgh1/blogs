@@ -407,7 +407,7 @@ iframe{
   }
 }
 </style>
-</head>
+
 
 <body class="bg-gray-100">
 
@@ -523,7 +523,7 @@ function toggleFS(){
 </script>
 
 </body>
-</html>
+
 
 <!-- Start of OpenWidget (www.openwidget.com) code -->
 <script>
